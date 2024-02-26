@@ -1,0 +1,1239 @@
+{
+    "header": {
+      "gtfs_realtime_version": "2.0",
+      "incrementality": 0,
+      "timestamp": 1708983561
+    },
+    "entity": [
+      {
+        "id": "1",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Template Winter Session Schedule/ J-Term 2023"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Tuesday, January 3rd Through Thursday, January 12th, 2023 /br /br We Will Provide The Following Service: /br /br Shuttle Service: /br u Tuesday Jan 3rd Thursday Jan 12th /u /br Monday - Friday /br /br Quad SEC Direct /br 7:00am 7:40pm /br 20 minute frequencies /br /br Allston Campus /br 7:00AM 10:30PM /br 30 minute frequencies /br /br 7 Days A Week /br Crimson Cruiser, 1636 er /br 8:15AM 12:20AM /br /br u Saturday Jan 7th, Jan 8th Sunday Jan14th /u /br SEC Weekend /br 10:45am 6:45pm /br 30 minute frequencies /br /br u Tuesday Jan 3rd Thursday Jan 12th /u /br Daytime Van Service: /br Monday - Friday /br 08:30AM 7:00PM /br Saturday - Sunday /br 12:30PM 7:00PM /br /br Evening Van Service: /br Monday - Friday /br 08:30AM 7:00PM /br Saturday - Sunday /br 12:30PM 7:00PM /br /br Happy New Year /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1672785026,
+              "end": 1673591426
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Template President's Day 2023"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Monday, February 20th br/ We will provide the following service: /br /br Shuttle Service: /br Crimson Cruiser /br 8:15AM-4:23PM br/ /br 1636 er /br 4:20PM-12:25AM br/ /br Monday Morning and Tuesday Morning br/ Extended Overnight /br 12:40AM-3:52AM br/ /br Daytime Van Service: No Day Time Van Service br/ Evening Van Service: No Evening Van Service br/ br/ Enjoy the long weekend"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1676495384,
+              "end": 1677013784
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "SEC 2"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "11/27/2023 Due to unforeseen circumstances, we will run with reduced schedule this morning on the SEC 2 route We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1679952550,
+              "end": 1679959750
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Template Additional Weekend Exam Shuttle"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Weekend Exam Shuttles will be available on Saturday, May 6th, 2023 and Saturday, May 13th, 2023. /br /br Shuttle Service: /br /br Exam Mather Express /br 8:10AM 4:00PM /br 10 minute frequencies /br /br Exam Quad Express /br 8:10AM 4:00PM /br 10 minute frequencies /br /br 1636 er /br 4:20PM 12:25AM /br 20 minute frequencies /br /br Allston Campus PM /br 5:00PM 7:55PM /br 20 minute frequencies /br /br Daytime Van Service: /br 08:00AM 7:00PM /br /br Evening Van Service: /br 07:00PM 3:00AM /br Last call 02:15AM /br /br Good Luck on your Exams /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1683233898,
+              "end": 1684036818
+            }
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Senior Week & Reunion service 2023"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Service from 05/14/23 - 06/03/23 /br //br We will provide the following reduced service: /br /br Shuttle Service: /br /br Weekdays /br /br Quad - Sec Direct /br 7:00AM 7:40PM /br 40 minute frequencies /br /br Quad Express /br 7:35AM 3:40PM /br 20 minute frequencies /br /br Allston Loop /br 7:00AM 10:39PM /br 30 minute frequencies /br /br Mather Express /br 7:40AM 3:20PM /br 20 minute frequencies /br /br Weekends /br /br Allston Loop /br 5:15PM 07:54PM /br 30 minute frequencies /br /br 7 days a week /br /br 1636'er /br 4:20PM 12:25AM /br 20 minute frequencies /br /br Crimson Cruiser /br 8:15AM 4:23PM /br 20 minute frequencies /br /br Weekdays /br /br Daytime Van Service: /br 08:00AM 7:00PM /br /br 7 days a week /br /br Evening Van Service: /br 07:00PM 3:00AM /br Last call 02:15AM /br /br For service on Commencement Class day please click below a href https://www.transportation.harvard.edu/shuttle-van-services/commencement-and-class-day Commencement and Class day /a /br /br Congratulations to the class of 2023 /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1684499468,
+              "end": 1685881868
+            }
+          ]
+        }
+      },
+      {
+        "id": "6",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Commencement 2023"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Thursday, May 25, 2023 /br /br For service on Commencement day please click below a href https://www.transportation.harvard.edu/shuttle-van-services/commencement-and-class-day Commencement and Class day /a /br /br Congratulations to class of 2023 /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1684928508,
+              "end": 1685073648
+            }
+          ]
+        }
+      },
+      {
+        "id": "7",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Reduced Service 6/5/23-6/16/23"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Service from 06/5/23 - 06/16/23 /br //br We will provide the following reduced service: /br /br Shuttle Service: /br /br Weekdays /br /br Sec Direct - Harvard Sq /br 8:00AM 4:00PM /br 20 minute frequencies /br /br Allston Loop /br 7:00AM 07:40PM /br 30 minute frequencies /br /br Weekdays /br /br Daytime Van Service: /br 08:00AM 4:00PM /br /br 7 days a week /br /br Evening Van Service: /br 4:00PM 12:00AM /br Last call 11:15PM /br /br Congratulations to the class of 2023 /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1685637995,
+              "end": 1686933995
+            }
+          ]
+        }
+      },
+      {
+        "id": "8",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Template First Year Week"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Sunday, August 27th Through Thursday, August 31st, 2023 /br /br Please note that on Friday, September 1st all fixed route shuttle service will be suspended from 7:00AM-7:00PM to support the Day of Service. /br /br Full Service will begin on Tuesday September 5th. /br /br We Will Provide The Following Service: /br /br Shuttle Service: /br u Monday Thursday /u /br Quad SEC Direct /br 7:00am 7:00pm /br 20 minute frequencies /br /br u Monday Thursday /u /br Allston Campus /br 7:00AM 7:00PM /br 30 minute frequencies /br /br u 7 days a week /u /br Crimson Cruiser, 1636 er /br 8:15AM 12:20AM /br /br Daytime Van Service: /br u Monday Friday /u /br 8:00AM 4:00PM /br /br Evening Van Service: /br u 7 days a week /u /br 4:00PM - 12:00AM /br /br Welcome to Harvard -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1692365123,
+              "end": 1693486703
+            }
+          ]
+        }
+      },
+      {
+        "id": "9",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Template"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Date Here Due to unforeseen circumstances, we will run with reduced service tonight. /br /br QUAD Yard Express will stop running at 10:00pm . /br /br The Overnight PM will stop running at 11:40pm. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1694635258,
+              "end": 1694757658
+            }
+          ]
+        }
+      },
+      {
+        "id": "10",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Extended Overnight"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "10/26/23 Due to unforeseen circumstances, The Extended overnight route will run behind the schedule tonight. /br /br QUAD Yard Express will stop running at 10:00pm . /br /br The Overnight PM will stop running at 11:40pm. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1698302297,
+              "end": 1698309497
+            }
+          ]
+        }
+      },
+      {
+        "id": "11",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Allston Loop"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "11/3/23 Please note that the Allston loop will not be running it's 3:10PM trip from Memorial Hall. It will begin at 3:35PM from SEC. We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1699037377,
+              "end": 1699040700
+            }
+          ]
+        }
+      },
+      {
+        "id": "12",
+        "alert": {
+          "informed_entity": [
+            {
+              "route_id": "790"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Quad Express DELAY"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Please note that due to an emergency, from 1:10 through 4:30, departures will be every 20 minutes. Quad -Sec is running on schedule."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1700062827,
+              "end": 1700082000
+            }
+          ]
+        }
+      },
+      {
+        "id": "13",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Thanksgiving Service"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "We Will Provide The Following Service: /br /br Shuttle Service: /br u Wednesday the 22nd /u /br Full Service /br /br u Thursday the 23rd /u /br Thanksgiving Service /br 11:15AM-6:45PM /br 35 minute frequencies /br Quad - Memorial Hall - Mather House /br /br u Saturday the 25th /u /br Full Service /br /br Daytime Van Service: /br u Wednesday the 22nd /u /br Full Service /br /br u Thursday the 23rd- Saturday the 25th /u /br No Service /br /br u Sunday the 26th /u /br Starting at Noon /br /br Evening Van Service: /br u Wednesday the 22nd /u /br Full Service /br /br u Thursday the 23rd- Friday the 25th /u /br No Service /br /br u Saturday the 25th /u /br Full Service /br /br"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1700234657,
+              "end": 1701060955
+            }
+          ]
+        }
+      },
+      {
+        "id": "14",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Overnight PM"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "11/21/2023 Due to unforeseen circumstances, we will run with reduced service tonight. /br /br Overnight pm will run only one bus every 40 minutes . /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please get in touch with our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also, consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1700535000,
+              "end": 1669093200
+            }
+          ]
+        }
+      },
+      {
+        "id": "15",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Service Reduction 11/22/23"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "11/22/2023 /br /br Reduced Service /br /br Due to the upcoming holiday, we will be running reduced service on the SEC Express. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also, consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1700665383,
+              "end": 1700694003
+            }
+          ]
+        }
+      },
+      {
+        "id": "16",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Overnight PM"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "11/22/2023 Due to unforeseen circumstances, we will run with reduced service tonight. /br /br Overnight pm will run only one bus every 40 minutes . /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please get in touch with our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also, consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1700711700,
+              "end": 1700715300
+            }
+          ]
+        }
+      },
+      {
+        "id": "17",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "QUAD-SEC"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "11/27/23 Please note that the QUAD-SEC is now running it's regular schedule. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701090746,
+              "end": 1701093600
+            }
+          ]
+        }
+      },
+      {
+        "id": "18",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "QUAD Express"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/1/23 /br /br Please note that the QUAD Express will be missing the following departures this afternoon: 3:10PM Memorial Hall, 3:20PM Quad, 3:30PM Memorial Hall. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701455985,
+              "end": 1701463200
+            }
+          ]
+        }
+      },
+      {
+        "id": "19",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "SEC Express"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/6/23 /br /br Due to a mechanical issue the SEC Express will be running with delays. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701872287,
+              "end": 1701874800
+            }
+          ]
+        }
+      },
+      {
+        "id": "20",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "App Update"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Attention all users, please note that PassioGo has released an app update within the past few weeks with improvements. Please make sure you have the most up to date application by visiting your mobile devices app store."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701888568,
+              "end": 1702493368
+            }
+          ]
+        }
+      },
+      {
+        "id": "21",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Quad - SEC"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Please excuse a moment of limited service for the Quad - SEC run, we will be back up and running shortly."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701965628,
+              "end": 1701966648
+            }
+          ]
+        }
+      },
+      {
+        "id": "22",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Announcement on Service Interruptions"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Monday, December, 7th ,2023 /br /br Delays: br/ Quad Yard br/ br/ Due to an automobile accident all shuttle routes are currently delayed. first responders have blocked Harvard Sq. br/ br/ For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also, consider utilizing our free evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for your patience and choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701966654,
+              "end": 1701993654
+            }
+          ]
+        }
+      },
+      {
+        "id": "23",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Extended Overnight"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/8/23 Due to unforeseen circumstances, The Extended overnight route will run behind the schedule tonight. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1701997356,
+              "end": 1702000956
+            }
+          ]
+        }
+      },
+      {
+        "id": "24",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Quad Express"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/11/23 /br /br Due to unforeseen circumstances, The Quad Express route will run with reduced frequency for a short period of time. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702326209,
+              "end": 1702328100
+            }
+          ]
+        }
+      },
+      {
+        "id": "25",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Mather Express"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/12/23 /br /br Due to a mechanical issue, the Mather Express route will run with reduced frequency for a short period of time. /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702386733,
+              "end": 1702389600
+            }
+          ]
+        }
+      },
+      {
+        "id": "26",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Quad Yard Express"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/13/23 /br /br Due to unforeseen circumstances, the Quad Yard Express route will not run from 10 pm to 12 am tonight. . /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702516435,
+              "end": 1702531555
+            }
+          ]
+        }
+      },
+      {
+        "id": "27",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Delays 12/14/23"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/14/23 /br /br We will be running some routes with delays for a short period of time. Please note that the SEC Express and QUAD Express will be running with less frequency until about 10AM. . /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702558806,
+              "end": 1702567806
+            }
+          ]
+        }
+      },
+      {
+        "id": "28",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Limited Service 12/15"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/15/23 /br /br We will be running the fallowing routes with limited frequency for portions of today. /br /br Quad - SEC Direct /br /br Quad Express . /br /br We apologize for the inconvenience. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702646493,
+              "end": 1702688400
+            }
+          ]
+        }
+      },
+      {
+        "id": "29",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Weekend Exam Shuttles 12/16"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Saturday 12/16 /br We Will Provide The Following Service: /br /br Shuttle Service: /br Exam Mather Express /br Exam Quad Express /br Every ten minutes from 8:10AM until 4:00PM /br /br 1636'er /br 4:20PM -12:25AM /br /br Allston Campus PM /br 5:00PM -7:55PM /br /br Daytime Van Service: /br 8:00AM - 7:00PM /br /br Evening Van Service: /br Full Service /br /br TIMES NOT SPECIFIED WILL HAVE NORMAL SERVICE OPERATING /br /br Good luck on your exams /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702648800,
+              "end": 1702789192
+            }
+          ]
+        }
+      },
+      {
+        "id": "30",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Winter Service"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Transit Services will be closed from 12/22/23-1/1/23 /br /br We will return in 2024 with J-Term service. Happy Holidays and a Happy New Year"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1702925290,
+              "end": 1704134890
+            }
+          ]
+        }
+      },
+      {
+        "id": "31",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Limited Service"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "12/19/2023 We will be running the following routes with limited service today. Quad Sec."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1703019762,
+              "end": 1703035842
+            }
+          ]
+        }
+      },
+      {
+        "id": "32",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "QUAD RIDERS"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Please note that due to construction, QUAD shuttles will be picking up riders on Shepard St."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1704288658,
+              "end": 1704331858
+            }
+          ]
+        }
+      },
+      {
+        "id": "33",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Phone line 617-495-0400"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "01/05/24 /br /br Due to unforeseen circumstances, Our office phone line 617-495-0400 is not in service. The phone line department works hard to put it back in ASAP. /br /br We apologize for the inconvenience. /br /br"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1704512005,
+              "end": 1704519205
+            }
+          ]
+        }
+      },
+      {
+        "id": "34",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "ATTENTION ALL RIDERS"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Please note that PassioGo is working on improving their real time ETA's to be more accurate. While this update is in progress please refer to the bus schedule as well as the movement of the bus icons on the map. For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Thank you for your understanding."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1705589332,
+              "end": 1709304532
+            }
+          ]
+        }
+      },
+      {
+        "id": "35",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "QUAD Express"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Please excuse our delay, the QUAD Express is running with delays until 2:10PM."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1707332450,
+              "end": 1707333050
+            }
+          ]
+        }
+      },
+      {
+        "id": "36",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Delays"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Shuttles are currently running with delays due to traffic resulting from the MBTA red line closure. /br For assistance please call a href tel:617-495-0400 617-495-0400 /a or visit a href https://www.transportation.harvard.edu/shuttle-van-services our website /a for more information."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1707348090,
+              "end": 1707354000
+            }
+          ]
+        }
+      },
+      {
+        "id": "37",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Presidents Day 2/19/24"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Please note that in observation of Presidents Day, Transit services will run the following service Monday 2/19/24. /br /br Shuttle Service: /br Crimson Cruiser, 1636 er /br 8:15AM 12:20AM /br /br Daytime Van Service: /br Closed /br /br Evening Van Service: /br Closed /br /br We will resume full academic service starting Tuesday 2/20/24. /br -Transit Services"
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1708083000,
+              "end": 1708404955
+            }
+          ]
+        }
+      },
+      {
+        "id": "38",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Shuttle Delays"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Thursday, February 21st, 2024 /br /br Attention Passengers: Shuttles are currently running with delays due to traffic resulting from the MBTA Red Line issues. Please be aware that due to the extensive number of MBTA shuttle buses, we will not be able to layover at Widener Gate. Our shuttle buses will pick-up/drop-off and immediately proceed to their next stop. Please consider arriving prior to the scheduled time in order to avoid missing our shuttle. We apologize for any inconvenience this may cause you. /br /br For shuttle schedules and more information, please contact our office at a href tel: 1617-495-0400 (617) 495-0400 /a or visit our a href https://www.transportation.harvard.edu/shuttle-van-services/shuttles-schedule/morning-afternoon-monday-friday website. /a /br /br Also consider utilizing our evening van service and download our evening van app a href https://www.transportation.harvard.edu/shuttle-van-services/demand-van-service here. /a /br /br Thank you for choosing our service."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1708552214,
+              "end": 1708576214
+            }
+          ]
+        }
+      },
+      {
+        "id": "39",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "QUAD - SEC Delay"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Due to a mechanical issue, there will be delays on the QUAD-SEC route. We are working to rectify the issue as soon as possible. Thank you for your patience."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1708620049,
+              "end": 1708622400
+            }
+          ]
+        }
+      },
+      {
+        "id": "40",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "MBTA Red Line Closure 2/24/24-2/25/24"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Saturday, February 24th, 2024 /br /br Attention Passengers: Shuttles are currently running with delays due to traffic resulting from the MBTA Red Line issues. The MBTA is closing portions of the Red Line for track repair and replacing the service with shuttle connections. For more information about this closure please visit the a href https://www.mbta.com/diversions/alternative-travel-options-during-red-line-closures MBTA website /a . /br br/ Please note that this will have impacts on local traffic and select shuttle stop locations. Shuttles may run with delays at high traffic hours. /br /br From 2/24/24-2/25/24 our shuttle service will be affected at the following locations: /br Widner-Gate: Widner Gate shuttle stop will be used by MBTA shuttle service. To accommodate the large influx of bus traffic, the Harvard shuttles will be relocating to the back of the bus loading zone, left after exiting Widner Gate. /br /br For assistance please call a href tel:617-495-0400 617-495-0400 /a , we are available 7AM-3AM weekdays and 12PM-3AM weekends."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1708700400,
+              "end": 1708923355
+            }
+          ]
+        }
+      },
+      {
+        "id": "41",
+        "alert": {
+          "informed_entity": [
+            {
+              "agency_id": "831"
+            }
+          ],
+          "header_text": {
+            "translation": [
+              {
+                "text": "Stadium (Northbound)"
+              }
+            ]
+          },
+          "description_text": {
+            "translation": [
+              {
+                "text": "Due to construction on North Harvard St, the bus stop is currently inaccessible. Please wait in the shuttle stop and be cautious when boarding the bus as it will not be able to pull fully into the egress."
+              }
+            ]
+          },
+          "active_period": [
+            {
+              "start": 1708965667,
+              "end": 1709355355
+            }
+          ]
+        }
+      }
+    ]
+  }
