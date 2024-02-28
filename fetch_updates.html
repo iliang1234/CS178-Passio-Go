@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Viewer</title>
+</head>
+<body>
+  <pre id="json-content"></pre>
+  
+  <script>
+    function fetchData(url, interval) {
+        setInterval(() => {
+        fetch(url)
+            .then(response => {
+            if (!response.ok) {
+                throw new Error('Poor network response');
+            }
+            return response.json();
+            })
+            .then(data => {
+            // Display the entire JSON object
+            document.getElementById('json-content').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+            });
+        }, interval);
+    }
+  
+    // const url = 'https://passio3.com/harvard/passioTransit/gtfs/realtime/vehiclePositions.json';
+    const url = 'https://passio3.com/harvard/passioTransit/gtfs/realtime/tripUpdates.json';
+    const fetch_interval = 5;
+    fetchData(url, fetch_interval * 1000); // Convert seconds to milliseconds
+        
+  </script>
+</body>
+</html>
