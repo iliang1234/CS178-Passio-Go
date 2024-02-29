@@ -1,0 +1,22 @@
+html, body, #root {
+  height: 100%;
+  margin: 0; 
+}
+
+.App {
+  text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+}
+
+.row.flex {
+  flex: 1; 
+  display: flex; 
+}
+
+.no-gutter {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
