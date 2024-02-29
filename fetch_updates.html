@@ -11,6 +11,7 @@
   <script>
     function fetchData(url, interval) {
         setInterval(() => {
+        // should we use await?
         fetch(url)
             .then(response => {
             if (!response.ok) {
