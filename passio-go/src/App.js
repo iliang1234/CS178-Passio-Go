@@ -1,5 +1,5 @@
 import './App.css';
-import HarvardSquareMap from './components/map';
+import HarvardSquareMap from '../../passio-go/src/components/map';
 
 function App() {
   return (
