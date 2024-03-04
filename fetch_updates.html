@@ -21,7 +21,7 @@
             })
             .then(data => {
             // Display the entire JSON object
-            document.getElementById('json-content').textContent = JSON.stringify(data, null, 2);
+            document.getElementById('json-content').textContent = JSON.stringify(data['entity'][0]['vehicle']['position'], null, 2);;
             })
             .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
@@ -29,9 +29,9 @@
         }, interval);
     }
   
-    // const url = 'https://passio3.com/harvard/passioTransit/gtfs/realtime/vehiclePositions.json';
-    const url = 'https://passio3.com/harvard/passioTransit/gtfs/realtime/tripUpdates.json';
-    const fetch_interval = 5;
+    const url = 'https://passio3.com/harvard/passioTransit/gtfs/realtime/vehiclePositions.json';
+    // const url = 'https://passio3.com/harvard/passioTransit/gtfs/realtime/tripUpdates.json';
+    const fetch_interval = 1;
     fetchData(url, fetch_interval * 1000); // Convert seconds to milliseconds
         
   </script>
