@@ -26,6 +26,31 @@ const HarvardSquareMap = () => {
 
     var trips_per_route_dict = {"778": [661197, 661198, 661199, 661200, 661201, 661203, 661204, 664485, 661205, 661206, 661207, 661208, 661210, 661211, 661212, 661213, 661214, 661215, 661216, 661217, 661218, 661219, 661220, 661221, 661223, 661224, 661225, 661226, 661227, 661228, 661229, 661309, 661316, 661317, 661318, 661319, 661320, 670445, 670446, 670447, 670450, 670612, 670613, 670614, 670615, 670616], "2235": [661310, 670460, 670461, 670503, 670504, 670505, 670506, 670507, 670508, 670509, 670510, 670511, 670512, 670531, 670532, 670533, 670534, 670535, 670536, 670537, 670539, 670540, 670541, 670542, 670543, 670544, 670545, 670546, 670547, 670548, 670549, 670550, 670551, 670552, 670553, 670554, 670555, 670556], "790": [661290, 661291, 661292, 661293, 661294, 661295, 661296, 661297, 661298, 661299, 661300, 661301, 661302, 661303, 661304, 661305, 661306, 670178, 670179, 670180, 670181, 670182, 670183, 670184, 670185, 670186, 670187, 670188, 670189, 670190, 670191, 670192, 670193, 670194, 670195, 670196, 670197, 670198, 670201, 670202, 670203, 670204, 670205, 670206, 670207, 670208, 670209, 670210, 670211, 670212, 670213, 670214]}
 
+    const fetchStopsAndMarkers = () => {
+      fetch('/google_transit/stops.txt')
+        .then(response => response.text())
+        .then(data => {
+          const stops = data.split('\n').slice(1);
+          stops.forEach(stop => {
+            const stopInfo = stop.split(',');
+            const stopName = stopInfo[2];
+            const stopLat = parseFloat(stopInfo[4]);
+            const stopLon = parseFloat(stopInfo[5]);
+
+            const circle = L.circleMarker([stopLat, stopLon], {
+              color: 'black',
+              fillColor: 'black',
+              fillOpacity: 1.0,
+              radius: 5
+            }).addTo(map);
+
+            // display stop name once circle is clicked
+            circle.bindPopup(stopName);
+          });
+        })
+        .catch(error => console.error('Error fetching stops data:', error));
+    };
+
     const fetchRoutes = () => {
       const fetchPromises = [];
 
@@ -100,6 +125,7 @@ const HarvardSquareMap = () => {
     };
 
     let circleMarkers = [];
+    fetchStopsAndMarkers();
 
     fetchRoutes()
       .then(() => {
