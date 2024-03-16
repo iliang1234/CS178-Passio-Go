@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 // import trips_per_route_dict from '/Users/iliang/Desktop/CS 178/CS178-Passio-Go/trips_per_route.json' assert { type: 'json' };
@@ -76,7 +76,7 @@ const HarvardSquareMap = () => {
                 }
               }
 
-              if (route_id != '') {
+              if (route_id !== '') {
                 var route_color = route_colors_per_route[route_id];
 
                 var latitude = vehicle['position']['latitude'];
