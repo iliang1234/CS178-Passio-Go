@@ -87,18 +87,30 @@ const HarvardSquareMap = () => {
         .then((response) => response.text())
         .then((data) => {
           const stops = data.split("\n").slice(1);
+          const excludedStopNames = new Set([
+            'Cambridge Common', 
+            'The Inn', 
+            'Stadium (Northbound)', 
+            'Mather House', 
+            'Winthrop House', 
+            'Widener Gate', 
+            '784 Memorial Drive', 
+            'Sever Gate',
+          ]);
+          
           stops.forEach((stop) => {
             const stopInfo = stop.split(",");
-            const stopName = stopInfo[2];
+            const stopName = stopInfo[2]; // Remove quotes if present
             const stopLat = parseFloat(stopInfo[4]);
             const stopLon = parseFloat(stopInfo[5]);
-
-            const circle = L.circleMarker([stopLat, stopLon], {
-              color: "black",
-              fillColor: "black",
-              fillOpacity: 1.0,
-              radius: 4,
-            }).addTo(map);
+      
+            if (!excludedStopNames.has(stopName)) {
+              const circle = L.circleMarker([stopLat, stopLon], {
+                color: "black",
+                fillColor: "black",
+                fillOpacity: 1.0,
+                radius: 4,
+              }).addTo(map);
 
             // display stop name once circle is clicked
             circle.bindPopup(stopName);
@@ -200,17 +212,24 @@ const HarvardSquareMap = () => {
                     // Wait for all uncertainty fetch promises to resolve
                     Promise.all(uncertaintyFetchPromises)
                       .then(() => {
-                        // Append arrival times and uncertainty values to the popup content
-                        arrivalTimes.forEach((arrivalTime, index) => {
-                          const routeName = uncertaintyValues[index][1];
-
-                          // popupContent += `<strong>Trip ID:</strong> ${tripUpdateData.entity[index].trip_update.trip.trip_id}<br>`;
-                          popupContent += `<strong>Route:</strong> ${routeName}<br>`;
-                          popupContent += `<strong>Arrival Time:</strong> ${arrivalTime}<br>`;
-                          popupContent += `<strong>Uncertainty Value:</strong> ${
-                            uncertaintyValues[index][0] || "Unknown"
-                          }<br><br>`;
+                        const combinedData = arrivalTimes.map((time, index) => {
+                          return {
+                            arrivalTime: time,
+                            uncertainty: uncertaintyValues[index][0],
+                            routeName: uncertaintyValues[index][1]
+                          };
                         });
+                        
+                        combinedData.sort((a, b) => new Date(a.arrivalTime) - new Date(b.arrivalTime));
+                        
+                        combinedData.forEach((data) => {
+                          const timePart = data.arrivalTime.split(', ')[1];
+
+                          popupContent += `<strong>Arrival Time:</strong> ${timePart}<br>`;
+                          popupContent += `<strong>Route:</strong> ${data.routeName}<br>`;
+                          popupContent += `<strong>Uncertainty Value:</strong> ${data.uncertainty || "Unknown"}<br><br>`;
+                        });
+                        
                         circle.setPopupContent(popupContent);
                       })
                       .catch((error) =>
@@ -229,7 +248,7 @@ const HarvardSquareMap = () => {
 
               setInterval(updatePopupContent, 3000);
             });
-          });
+        }});
         })
         .catch((error) => console.error("Error fetching stops data:", error));
     };
@@ -260,51 +279,46 @@ const HarvardSquareMap = () => {
     };
 
     const updateMarkers = () => {
-      fetch(
-        "https://passio3.com/harvard/passioTransit/gtfs/realtime/vehiclePositions.json"
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          // Remove previous circle markers
-          circleMarkers.forEach((marker) => marker.remove());
+      fetch("https://passio3.com/harvard/passioTransit/gtfs/realtime/vehiclePositions.json")
+        .then(response => response.json())
+        .then(data => {
+       
+          circleMarkers.forEach(marker => marker.remove());
           circleMarkers = [];
-
-          Object.keys(data).forEach(function (key) {
-            var entities_list = data["entity"];
-
-            entities_list.forEach(function (entity) {
-              // TODO: add if statement to only display vehicles associated with the 3 routes we care about
-              // trips_per_route_dict
-              var vehicle = entity["vehicle"];
-              var trip_id = parseInt(entity["vehicle"]["trip"]["trip_id"]);
-              var route_id = "";
-
-              for (const [key, value] of Object.entries(trips_per_route_dict)) {
-                if (value.includes(trip_id)) {
-                  route_id = key;
-                }
+    
+          data.entity.forEach(entity => {
+            const vehicle = entity.vehicle;
+            const tripId = parseInt(vehicle.trip.trip_id);
+            let routeId = "";
+    
+            for (const [key, value] of Object.entries(trips_per_route_dict)) {
+              if (value.includes(tripId)) {
+                routeId = key;
+                break; 
               }
-
-              if (route_id !== "") {
-                var route_color = route_colors_per_route[route_id];
-
-                var latitude = vehicle["position"]["latitude"];
-                var longitude = vehicle["position"]["longitude"];
-
-                // Create a circle marker at the specified latitude and longitude
-                var circle = L.circleMarker([latitude, longitude], {
-                  color: route_color, // border color of marker
-                  fillColor: route_color, // fill color of marker
-                  fillOpacity: 1.0, // opacity of marker
-                  radius: 5, // radius of marker
-                }).addTo(map);
-
-                circleMarkers.push(circle);
-              }
-            });
+            }
+    
+            if (routeId !== "") {
+              const routeColor = route_colors_per_route[routeId];
+              const latitude = vehicle.position.latitude;
+              const longitude = vehicle.position.longitude;
+    
+              const rawSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M254.07,114.79,208.53,61.73A16,16,0,0,0,196.26,56H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H49a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A8,8,0,0,0,254.07,114.79ZM32,112V72H88v40Zm48,96a16,16,0,1,1,16-16A16,16,0,0,1,80,208Zm80-96H104V72h56Zm32,96a16,16,0,1,1,16-16A16,16,0,0,1,192,208Zm-16-96V72h20.26l34.33,40Z" fill="${routeColor}" stroke="black" stroke-width="5"/></svg>`;
+              const svgUrl = `data:image/svg+xml;base64,${window.btoa(unescape(encodeURIComponent(rawSvg)))}`;
+    
+              const coloredVanIcon = L.icon({
+                iconUrl: svgUrl,
+                iconSize: [25, 25],
+                iconAnchor: [12.5, 12.5], 
+                popupAnchor: [0, -10], 
+              });
+  
+              const marker = L.marker([latitude, longitude], { icon: coloredVanIcon }).addTo(map);
+              circleMarkers.push(marker);
+            }
           });
         })
-        .catch((error) => console.error("Error fetching data:", error));
+        .catch(error => console.error("Error fetching data:", error));
     };
 
     fetchRoutes()
