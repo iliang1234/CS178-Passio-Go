@@ -5,7 +5,9 @@ import SideBar from "./components/sidebar";
 function App() {
   return (
     <div className="App">
-      <h1 className="m-4 text-center">Passio Go</h1>
+      <div className='app-title'>
+        <h1 className="m-4 text-center">Passio Go</h1>
+      </div>
       <div className="row flex no-gutter">
         <div className="col-3">
           <div className="routes-title text-left">Routes</div>
