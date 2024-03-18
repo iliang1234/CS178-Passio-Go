@@ -9,9 +9,11 @@ function App() {
       <div className="row flex no-gutter">
         <div className="col-3">
           <div className="routes-title text-left">Routes</div>
-          <SideBar />
+          <div className="scrollable">
+            <SideBar />
+          </div>
         </div>
-        <div className="col-9 bg-secondary">
+        <div className="col-9">
           <HarvardSquareMap />
         </div>
       </div>

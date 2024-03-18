@@ -21,6 +21,7 @@ body,
   --bs-gutter-y: 0;
 }
 
+/* pills */
 .pill-sec {
   background-color: #ffaf5f;
   color: #543414;
@@ -48,6 +49,7 @@ body,
   justify-content: center;
 }
 
+/* accordion */
 button,
 h3 {
   all: unset;
@@ -56,12 +58,28 @@ h3 {
 .AccordionRoot {
   width: 100%;
   background-color: #c0c9d1;
-  box-shadow: 0 0.5px 0 #c0c9d1, 0 -0.5px 0 #c0c9d1;
+  box-shadow: 0 -0.5px 0 #c0c9d1;
 }
 
 .AccordionItem {
   overflow: hidden;
   margin-top: 0.5px;
+}
+
+.AccordionInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-family: inherit;
+  box-shadow: 0 0.5px 0 #c0c9d1;
+  padding: 10px 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 1;
 }
 
 .AccordionHeader {
@@ -79,16 +97,22 @@ h3 {
   font-size: 15px;
   line-height: 1;
   color: black;
-  box-shadow: 0 0.5px 0 #c0c9d1;
   background-color: white;
+  pointer-events: none !important;
 }
 
 .AccordionContent {
-  overflow: hidden;
+  max-height: 320px;
+  overflow: auto;
   font-size: 15px;
   color: black;
   background-color: white;
 }
+
+.AccordionContent .schedule-content {
+  max-height: 160px;
+}
+
 .AccordionContent[data-state="open"] {
   animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
@@ -97,11 +121,12 @@ h3 {
 }
 
 .AccordionContentText {
-  padding: 15px 20px;
+  padding: 0 20px;
 }
 
 .AccordionChevron {
   color: black;
+  pointer-events: auto !important;
   transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 .AccordionTrigger[data-state="open"] > .AccordionChevron {
@@ -126,20 +151,84 @@ h3 {
   }
 }
 
+/* sidebar */
+.scrollable {
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  box-shadow: 0 0.5px 0 #c0c9d1, 0 -0.5px 0 #c0c9d1;
+}
+
 .routes-title {
   margin: 20px;
 }
 
-.route-name {
-  margin-bottom: 6px;
+.route-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
-.route-info {
+.route-name {
+  margin-bottom: 6px;
+  margin-right: 10px;
+}
+
+.route {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.route-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.stop-name {
+  display: inline-block;
+}
+
+.first-level {
+  padding: 0 0;
+}
+
+/* schedule */
+.stops-dropdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.times {
+  padding: 3px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.closest-time {
+  background-color: #adf3be;
+}
+
+/* map */
 .leaflet-left {
   left: 95% !important;
+}
+
+/* checkbox */
+.CheckboxRoot {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.CheckboxIndicator {
+  color: black;
 }
