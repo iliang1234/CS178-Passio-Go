@@ -1,6 +1,18 @@
 import React, { useEffect } from "react";
-import L from "leaflet";
+import L, { popup } from "leaflet";
 import "leaflet/dist/leaflet.css";
+
+function epochToMilitaryTimeHour(epochTime) {
+  const date = new Date(epochTime * 1000);
+  var hours = date.getHours().toString().padStart(2, '0');
+
+  // if hour > 18 or hour < 07, set hour = 10
+  if (parseInt(hours) > 18 || parseInt(hours) < 7) {
+    hours = '10';
+  } 
+  
+  return hours;
+}
 
 const HarvardSquareMap = () => {
   useEffect(() => {
@@ -141,6 +153,8 @@ const HarvardSquareMap = () => {
                           .stop_time_update) {
                           if (stopTimeUpdate.stop_id === stopId) {
                             const tripId = entity.trip_update.trip.trip_id;
+                            const timestamp_epoch = Math.round(Date.now() / 1000); // current time
+                            const timestamp_military_hour = epochToMilitaryTimeHour(parseInt(timestamp_epoch));
 
                             // if trip is one of the three routes
                             if (
@@ -158,7 +172,7 @@ const HarvardSquareMap = () => {
 
                               // Fetch uncertainty data and extract the uncertainty value
                               const uncertaintyFetchPromise = fetch(
-                                "./google_transit/uncertainties_by_route.txt"
+                                "./google_transit/uncertainties_by_route_and_hour.txt"
                               )
                                 .then((response) => response.text())
                                 .then((uncertaintyData) => {
@@ -169,8 +183,9 @@ const HarvardSquareMap = () => {
                                     const [
                                       lineRouteId,
                                       lineStopId,
-                                      lineActualArrival,
+                                      lineHour,
                                       predActualDiffArrival,
+                                      predTendency
                                     ] = uncertaintyLine.split(",");
 
                                     const routeId = findKeyForValue(
@@ -183,10 +198,13 @@ const HarvardSquareMap = () => {
                                     if (
                                       parseInt(lineRouteId) ===
                                         parseInt(routeId) &&
-                                      parseInt(lineStopId) === parseInt(stopId)
+                                      parseInt(lineStopId) === parseInt(stopId) &&
+                                      parseInt(timestamp_military_hour) === parseInt(lineHour)
                                     ) {
+                                      
                                       uncertaintyValues.push([
                                         predActualDiffArrival,
+                                        predTendency,
                                         routeName,
                                       ]);
                                       return; // Exit the loop once the uncertainty value is found
@@ -216,7 +234,8 @@ const HarvardSquareMap = () => {
                           return {
                             arrivalTime: time,
                             uncertainty: uncertaintyValues[index][0],
-                            routeName: uncertaintyValues[index][1]
+                            predTendency: uncertaintyValues[index][1],
+                            routeName: uncertaintyValues[index][2]
                           };
                         });
                         
@@ -224,10 +243,21 @@ const HarvardSquareMap = () => {
                         
                         combinedData.forEach((data) => {
                           const timePart = data.arrivalTime.split(', ')[1];
+                          const uncertaintyHours = data.uncertainty.split(':')[0];
+                          const uncertaintyMins = data.uncertainty.split(':')[1];
+                          var uncertaintyDisplay = '[Unknown]';
 
-                          popupContent += `<strong>Arrival Time:</strong> ${timePart}<br>`;
+                          if (uncertaintyHours !== '00') {
+                            uncertaintyDisplay = '>1 Hours';
+                          }
+                          else {
+                            uncertaintyDisplay = uncertaintyMins + ' Minutes';
+                          }
+                          
                           popupContent += `<strong>Route:</strong> ${data.routeName}<br>`;
-                          popupContent += `<strong>Uncertainty Value:</strong> ${data.uncertainty || "Unknown"}<br><br>`;
+                          popupContent += `<strong>Arrival Time:</strong> ${timePart.split(':')[0]}:${timePart.split(':')[1]} ${timePart.split(' ')[1]}<br>`;
+                          popupContent += `Bus Usually Comes ${uncertaintyDisplay || "[Unknown]"} ${data.predTendency}<br><br>`;
+                          // popupContent += `<strong>Uncertainty Value:</strong> ${data.uncertainty || "Unknown"}<br><br>`;
                         });
                         
                         circle.setPopupContent(popupContent);
