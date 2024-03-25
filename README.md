@@ -1,5 +1,8 @@
 # CS178-Passio-Go
 
+## playground.ipynb
+Jupyter notebook file with all the python code to process json data; used to generate uncertainty and gain a general overview of all data files
+
 ## json_dump.json
 March 6th from 10 ish am to 3:30 pm; scraped every 10 minutes
 
