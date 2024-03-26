@@ -4,8 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "./components/accordion";
+} from "./accordion";
 import Papa from "papaparse";
+import { RssSimple } from "@phosphor-icons/react";
 
 const Schedule = ({ routeId }) => {
   const [schedule, setSchedule] = useState([]);
@@ -25,20 +26,19 @@ const Schedule = ({ routeId }) => {
 
   // Function to check if a time is after the current time
   const isAfterCurrentTime = (timeString) => {
-    const [time, period] = timeString.split(' ');
-    let [hours, minutes] = time.split(':').map(Number);
-    
+    const [time, period] = timeString.split(" ");
+    let [hours, minutes] = time.split(":").map(Number);
+
     // Adjust hours for 12-hour time format
-    if (period === 'PM' && hours < 12) hours += 12;
-    if (period === 'AM' && hours === 12) hours = 0;
-  
+    if (period === "PM" && hours < 12) hours += 12;
+    if (period === "AM" && hours === 12) hours = 0;
+
     const now = new Date();
     const currentTimeInMinutes = now.getHours() * 60 + now.getMinutes();
     const timeInMinutes = hours * 60 + minutes;
-  
+
     return timeInMinutes > currentTimeInMinutes;
   };
-  
 
   useEffect(() => {
     const fetchCsv = (filePath) => {
@@ -92,7 +92,7 @@ const Schedule = ({ routeId }) => {
           scheduleForRoute[stopName].sort((a, b) => a.sortValue - b.sortValue);
           scheduleForRoute[stopName] = scheduleForRoute[stopName].map(
             (time) => time.display
-          ); 
+          );
         }
 
         setSchedule(
@@ -116,25 +116,37 @@ const Schedule = ({ routeId }) => {
     <div>
       {schedule.length > 0 ? (
         schedule.map((item, index) => {
-            
           // Find the index of the closest time to the current time for each stop
-          const closestTimeIndex = item.times
+          let closestTimeIndex = item.times
             .map((time) => isAfterCurrentTime(time))
             .indexOf(true);
+          closestTimeIndex =
+            closestTimeIndex === -1 && item.times.length > 0
+              ? 0
+              : closestTimeIndex;
 
           return (
             <div key={index}>
               <Accordion className="AccordionRoot" type="multiple">
                 <AccordionItem value={item.stopName}>
-                  <AccordionTrigger>
+                  <div className="AccordionInfo2 sticky-line">
                     <h3 className="stop-name">{item.stopName}</h3>
-                  </AccordionTrigger>
-                  <AccordionContent className='schedule-content'>
-                    <div className='stops-dropdown'>
+                    <div className="stop-main">
+                      <div className="live-time">
+                        <div>{item.times[closestTimeIndex]}</div>
+                        <RssSimple weight="bold" />
+                      </div>
+                      <AccordionTrigger />
+                    </div>
+                  </div>
+                  <AccordionContent className="schedule-content">
+                    <div className="stops-dropdown">
                       {item.times.map((time, timeIndex) => (
                         <div
                           key={timeIndex}
-                          className={`times ${timeIndex === closestTimeIndex ? 'closest-time' : ''}`}
+                          className={`times ${
+                            timeIndex === closestTimeIndex ? "closest-time" : ""
+                          }`}
                         >
                           {time}
                         </div>

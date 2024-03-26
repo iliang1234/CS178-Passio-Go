@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import L, { popup } from "leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 function epochToMilitaryTimeHour(epochTime) {
@@ -121,7 +121,7 @@ const HarvardSquareMap = () => {
                 color: "black",
                 fillColor: "black",
                 fillOpacity: 1.0,
-                radius: 4,
+                radius: 5,
               }).addTo(map);
 
             // display stop name once circle is clicked
