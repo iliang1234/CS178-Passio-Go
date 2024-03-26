@@ -66,12 +66,10 @@ h3 {
 .AccordionRoot {
   width: 100%;
   background-color: #c0c9d1;
-  box-shadow: 0 -0.5px 0 #c0c9d1;
 }
 
 .AccordionItem {
   overflow: hidden;
-  margin-top: 0.5px;
 }
 
 .AccordionInfo {
@@ -80,8 +78,32 @@ h3 {
   align-items: center;
   background-color: white;
   font-family: inherit;
-  box-shadow: 0 0.5px 0 #c0c9d1;
   padding: 10px 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.sticky-line {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 0.4px solid #c0c9d1;
+  border-top: 0.4px solid #c0c9d1;
+  background: white;
+  z-index: 10;
+}
+
+.AccordionInfo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-family: inherit;
+  padding: 10px 0px 10px 20px;
   flex: 1;
   display: flex;
   align-items: center;
@@ -163,7 +185,6 @@ h3 {
 .scrollable {
   max-height: calc(100vh - 160px);
   overflow-y: auto;
-  box-shadow: 0 0.5px 0 #c0c9d1, 0 -0.5px 0 #c0c9d1;
 }
 
 .routes-title {
@@ -174,12 +195,17 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   gap: 20px;
 }
 
 .route-name {
   margin-bottom: 6px;
   margin-right: 10px;
+}
+
+.circle {
+  margin-right: 6px;
 }
 
 .route {
@@ -194,8 +220,39 @@ h3 {
   justify-content: flex-start;
 }
 
+.spotlight {
+  display: flex;
+}
+
+.dynamic:hover {
+  color: #ffc900;
+}
+
+.stop-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stop-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .stop-name {
   display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.live-time {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 .first-level {
