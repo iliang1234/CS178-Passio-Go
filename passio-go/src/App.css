@@ -226,6 +226,7 @@ h3 {
 
 .dynamic:hover {
   color: #ffc900;
+  cursor: pointer;
 }
 
 .stop-main {
